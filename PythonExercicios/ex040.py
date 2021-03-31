@@ -7,3 +7,9 @@
 n1 = float(input('Qual a sua primeira nota? '))
 n2 = float(input('Qual a sua segunda nota? '))
 m = (n1 + n2) / 2
+if m < 5:
+    print('\033[4;31mVocê está REPROVADO!\033[m')
+elif 5 < m <= 6.9:
+    print('\033[4;33mVocê está de RECUPERAÇÃO!\033[m')
+elif m > 7:
+    print('\033[4;36mVocê está APROVADO!\033[m')
