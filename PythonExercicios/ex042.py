@@ -16,3 +16,18 @@ if r3 < r1 + r2 and r2 < r1 + r3 and r1 < r2 + r3:
         print('Este é um triângulo \033[4;36mESCALENO\033[m!')
 else:
     print('\033[4;31mIsso não é um triângulo.\033[m')
+
+# Guanabara
+r1 = int(input('\nQual a medida da primeira reta? '))
+r2 = int(input('Qual a medida da segunda reta? '))
+r3 = int(input('Qual a medida da terceira reta? '))
+if r3 < r1 + r2 and r2 < r1 + r3 and r1 < r2 + r3:
+    print('\n\033[1;34mEste é um triângulo \033[4;36m', end='')
+    if r1 == r2 and r1 == r3 and r2 == r3:
+        print('EQUILÁTERO!')
+    elif r1 != r2 and r1 != r3 and r2 != r3:
+        print('ESCALENO!')
+    else:
+        print('ISÓSCELES!')
+else:
+    print('\033[4;31mIsso não é um triângulo.\033[m')
