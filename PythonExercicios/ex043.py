@@ -16,3 +16,7 @@ elif imc >= 18.5 and imc < 25:
     print('\033[4;36mVocê está no peso ideal! Parabéns!\033[m')
 elif imc >= 25 and imc < 30:
     print('\033[1;32mVocê está com sobrepeso!\033[m')
+elif imc >= 30 and imc < 40:
+    print('\033[4;33mVocê está obeso!\033[m')
+elif imc > 40:
+    print('\033[4;31mVocê está com obesidade mórbida!\033[m')
