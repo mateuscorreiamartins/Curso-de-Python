@@ -11,3 +11,9 @@ atual = date.today().year
 ano = int(input('Qual o ano do seu nascimento? '))
 idade = atual - ano
 print('Que legal! Você tem {} anos.'.format(idade))
+if idade <= 9:
+    print('\nVocê está na \033[4;32mCATEGORIA MIRIM!\033[m')
+elif idade <= 14:
+    print('\nVocê está na \033[4;30mCATEGORIA INFANTIL!\033[m')
+elif idade <= 19:
+    print('\nVocê está na \033[4;33mCATEGORIA JÚNIOR!\033[m')
