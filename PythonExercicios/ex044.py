@@ -18,3 +18,13 @@ elif cond == 2:
     print('\n\033[4;30mO valor de R${} com desconto de 5% fica R${}\033[m'.format(v, v - (5 * v / 100)))
 elif cond == 3:
     print('\n\033[4;30mO valor de R${} deverá ser pago em duas vezes de R${}'.format(v, v / 2))
+elif cond == 4:
+    vezes = int(input('\033[1;37mEm quantas vezes você vai pagar?\033[m '))
+    if vezes < 3:
+        print('\033[4;31mEsta opção é para 3 vezes ou mais!\033[m')
+    else:
+        nvalor = v + (20 * v / 100)
+        print('\n\033[4;30mO valor de R${} com 20% de juros fica R${}\n'
+            'Esse valor deverá ser pago em {} vezes de R${}'.format(v, nvalor, vezes, nvalor / vezes))
+else:
+    print('\033[4;31mOPÇÃO INVÁLIDA!\033[m')
