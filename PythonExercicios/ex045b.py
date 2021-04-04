@@ -27,3 +27,6 @@ if computador == 0:
         print('COMPUTADOR VENCEU')
     else:
         print('OPÇÃO INVÁLIDA!')
+if computador == 1:
+    if jogador == 0:
+        print('COMPUTADOR VENCEU')
