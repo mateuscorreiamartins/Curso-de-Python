@@ -18,3 +18,12 @@ print('-=' * 14)
 print('O computador jogou {}'.format(itens[computador]))
 print('O jogador jogou {}'.format(itens[jogador]))
 print('-=' * 14)
+if computador == 0:
+    if jogador == 0:
+        print('EMPATE')
+    elif jogador == 1:
+        print('JOGADOR VENCEU')
+    elif jogador == 2:
+        print('COMPUTADOR VENCEU')
+    else:
+        print('OPÇÃO INVÁLIDA!')
