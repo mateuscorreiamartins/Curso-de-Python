@@ -41,3 +41,7 @@ if computador == 2:
         print('JOGADOR VENCEU')
     elif jogador == 1:
         print('COMPUTADOR VENCEU')
+    elif jogador == 2:
+        print('EMPATE')
+    else:
+        print('OPÇÃO INVÁLIDA!')
