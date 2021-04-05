@@ -3,3 +3,6 @@
 
 from time import sleep
 print('\n\033[1;30mVAI COMEÇAR A CONTAGEM REGRESSIVA!\033[m')
+for c in range(10, -1, -1):
+    print(c)
+    sleep(1)
